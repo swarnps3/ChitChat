@@ -14,6 +14,21 @@ const chats = [
   _id: "617a077e18c25468bc7c4dd3",
   chatName: "John Rawat",
 },
+{
+  isGroupChat: false,
+  users: [
+    {
+      name: "Kumar Rawat",
+      email: "kumarr@example.com",
+    },
+    {
+      name: "Arun",
+      email: "arun@example.com",
+    },
+  ],
+  _id: "617a077e18c25468bc7c4dd5",
+  chatName: "Kumar Rawat",
+},
     {
       isGroupChat: false,
       users: [
