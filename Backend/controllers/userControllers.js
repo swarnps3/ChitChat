@@ -20,21 +20,21 @@ const registerUser= asyncHandler(async(req, res)=>{
             throw new Error('User already exists');
         }
 
-        const user= await User.create({
+        const user= await User.create({          //Create the user with given data from frontend
             name, 
             email, 
             password, 
             pic,
         });
 
-        if(user)
+        if(user)                                  //Sending the data, if user is valid
             {
                 res.status(201).json({
                     _id: user._id,
                     name: user.name,
                     email: user.email,
                     pic: user.pic,
-                    token: generateToken(user._id)
+                    token: generateToken(user._id)     //Token is used to authorize the user to access certain data
                 })
             }
             else{
