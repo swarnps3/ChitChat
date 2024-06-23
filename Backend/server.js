@@ -4,6 +4,7 @@ const { chats } = require("./dummy/data");
 const connectDB=require("./config/db");
 const colors=require("colors");
 const userRoutes=require("./routes/userRoutes");
+const chatRoutes=require("./routes/chatRoutes")
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 
 const app = express();
@@ -17,6 +18,7 @@ app.get('/', (req, res) => {
 })
 
 app.use('/api/user', userRoutes)   //we will extract all the logic related to user inside this userRoutes
+app.use('/api/chat', chatRoutes);
 
 // app.get('/api/chats', (req, res) => {
 //     res.send(chats);

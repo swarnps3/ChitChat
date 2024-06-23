@@ -9,7 +9,7 @@ const mongoose=require('mongoose');
 const chatModel=mongoose.Schema(
     {
         chatName:{type:String, trim:true},
-        isGroupChat:{type: boolean, default:false},
+        isGroupChat:{type: Boolean, default:false},
         users:[{
             type:mongoose.Schema.Types.ObjectId,      //will contain id to the perticular user
             ref:"User",                               //Reference to user model
