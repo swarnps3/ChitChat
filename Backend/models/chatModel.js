@@ -4,30 +4,22 @@
 //4. latest message
 //5. groupAdmin(if it isGroupChat)
 
-const mongoose=require('mongoose');
+const mongoose = require("mongoose");
 
-const chatModel=mongoose.Schema(
-    {
-        chatName:{type:String, trim:true},
-        isGroupChat:{type: Boolean, default:false},
-        users:[{
-            type:mongoose.Schema.Types.ObjectId,      //will contain id to the perticular user
-            ref:"User",                               //Reference to user model
-        },],
-        latestMessage:{
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"Message"
-        },
-        groupAdmin:{
-            type:mongoose.Schema.Types.ObjectId,
-            ref:"User"
-        },
-
+const chatModel = mongoose.Schema(
+  {
+    chatName: { type: String, trim: true },
+    isGroupChat: { type: Boolean, default: false },
+    users: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+    latestMessage: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Message",
     },
-    {
-        timestamps:true,
-    }
+    groupAdmin: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+  },
+  { timestamps: true }
 );
 
-const Chat=mongoose.model("Chat", chatModel);
-module.exports=Chat;
+const Chat = mongoose.model("Chat", chatModel);
+
+module.exports = Chat;

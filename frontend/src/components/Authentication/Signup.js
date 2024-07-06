@@ -128,7 +128,7 @@ const Signup = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setPicLoading(false);
-      // history.push("/chats");     //use history to navigate to different routes programmatically from within components
+      history.push("/chats");     //use history to navigate to different routes programmatically from within components
     } catch (error) {
       toast({
         title: "Error Occured!",

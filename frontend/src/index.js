@@ -1,24 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-// 1. import `ChakraProvider` component
-import { ChakraProvider } from '@chakra-ui/react';
-import { BrowserRouter} from 'react-router-dom';
+import "./index.css";
+import App from "./App";
+// import reportWebVitals from "./reportWebVitals";
+import { ChakraProvider } from "@chakra-ui/react";
+import ChatProvider from "./Context/ChatProvider";
+import { BrowserRouter } from "react-router-dom";
+import { createRoot } from 'react-dom/client';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const container = document.getElementById('root'); // Ensure this matches the ID in your HTML file
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+
+
 root.render(
-  <React.StrictMode>
-    {/* To use React router DOM we have to wrap up our app in Browser Router */}
+  <ChakraProvider>
     <BrowserRouter>
-    <ChakraProvider>
-    <App />
-      </ChakraProvider>
+      <ChatProvider>
+        <App />
+      </ChatProvider>
     </BrowserRouter>
-  </React.StrictMode>
+  </ChakraProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
+// reportWebVitals();
