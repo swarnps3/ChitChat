@@ -18,8 +18,7 @@ The **Chatting Website** is a real-time chat application developed using the MER
   - Create and join group chats.
   - Update group details like name and participants.
   - Group messaging in real-time.
-- **Notifications:** Real-time notifications for new messages.
-- **User Presence:** Display online/offline status of users.
+- **Notifications:** Real-time notifications for new messages. 
 - **User Information:** View user profiles with details like username and email.
 
 ## Tech Stack
