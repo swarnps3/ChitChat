@@ -70,7 +70,7 @@ The **Chatting Website** is a real-time chat application developed using the MER
 
 ### Notifications & Search
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <img src="notifications.png" alt="Notifications" width="250"/>
+  <img src="notification.png" alt="Notifications" width="250"/>
   <img src="searchuser.png" alt="Search User" width="250"/>
 </div>
 
@@ -294,6 +294,6 @@ chatting-website/
 
 ## Contact
 **Author**: [Swarn](https://github.com/swarnps3)
-"""
+
 
 
