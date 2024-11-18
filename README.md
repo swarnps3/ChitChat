@@ -50,33 +50,28 @@ The **Chatting Website** is a real-time chat application developed using the MER
 
 ### Authentication Screens
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <img src="./screenshots/login.png" alt="Login Screen" width="250"/>
-  <img src="./screenshots/signup.png" alt="Signup Screen" width="250"/>
-  <img src="./screenshots/profile.png" alt="Profile Screen" width="250"/>
+  <img src="login.png" alt="Login Screen" width="250"/>
+  <img src="signup.png" alt="Signup Screen" width="250"/>
+  <img src="profile.png" alt="Profile Screen" width="250"/>
 </div>
 
 ### Chat Features
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <img src="./screenshots/chatlist.png" alt="Chat List" width="250"/>
-  <img src="./screenshots/chatbox.png" alt="Chat Box" width="250"/>
-  <img src="./screenshots/groupchat.png" alt="Group Chat" width="250"/>
+  <img src="chatlist.png" alt="Chat List" width="250"/>
+  <img src="chatbox.png" alt="Chat Box" width="250"/>
+  <img src="groupchat.png" alt="Group Chat" width="250"/>
 </div>
 
 ### Group Chat Management
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <img src="./screenshots/create-group.png" alt="Create Group" width="250"/>
-  <img src="./screenshots/update-group.png" alt="Update Group" width="250"/>
+  <img src="creategroup.png" alt="Create Group" width="250"/>
+  <img src="updategroup.png" alt="Update Group" width="250"/>
 </div>
 
 ### Notifications & Search
 <div style="display: flex; flex-wrap: wrap; gap: 20px;">
-  <img src="./screenshots/notifications.png" alt="Notifications" width="250"/>
-  <img src="./screenshots/search-user.png" alt="Search User" width="250"/>
-</div>
-
-### Mobile View
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <img src="./screenshots/mobile-view.png" alt="Mobile View" width="250"/>
+  <img src="notifications.png" alt="Notifications" width="250"/>
+  <img src="searchuser.png" alt="Search User" width="250"/>
 </div>
 
 
